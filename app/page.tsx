@@ -113,7 +113,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <header className="fixed text-white w-full h-[100px] z-10">
+        <header className="fixed text-white w-full h-[100px] z-10 bg-[#000000d0]">
           <div className="container h-full flex items-center justify-between mx-auto">
             <div className="flex items-end gap-4 text-3xl font-bold">
               <Image
