@@ -7,11 +7,28 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      "tablet": "1050px",
+      "pad": "800px",
+    },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      animation: {
+        extending: "extending 1s",
       },
+      colors: {
+        primary: "var(--primary)",
+        primaryDark: "var(--primary-dark)",
+        primaryDarkest: "var(--primary-darkest)",
+        black: "var(--black)",
+        white: "var(--white)",
+        gray: "var(--grey)",
+        b5: "var(--b5)",
+        a0: "var(--a0)",
+      },
+      fontFamily: {
+        // setting default font
+        sans: "Actay",
+      }
     },
   },
   plugins: [],

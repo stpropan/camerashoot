@@ -3,19 +3,58 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #FF0100;
+  --primary-dark: #990100;
+  --primary-darkest: #640203;
+  --black: #060606;
+  --white: #F8F8F8;
+  --grey: #191818;
+  --b5: #5B5B5B;
+  --a0: #0A0A0A;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("/fonts/Actay-Regular.otf");
+}
+
+@font-face {
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 100 300;
+  font-display: swap;
+  src: url("/fonts/ActayCondensed-Thin.otf");
+}
+
+@font-face {
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src: url("/fonts/ActayWide-Bold.otf");
+}
+
+@keyframes extending {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* буква Й без шапки при градиенте */
+.bg-clip-text {
+  line-height: 1.3;
+}
+
+
+.flash::before {
+  height: 15px;
+  width: 15px;
+  content: url("/images/flash.svg");
+  margin-right: 10px;
 }
