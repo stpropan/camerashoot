@@ -245,8 +245,8 @@ export default function Home() {
         </div>
         <div id="section-5">
           <div className="bg-black">
-            <div className="container pt-20 mx-auto flex justify-center items-center flex-col">
-              <div className="bg-gradient-to-r from-[#F5F5F5] to-[#989898] text-transparent bg-clip-text md:text-6xl text-4xl font-bold uppercase w-fit">Отзывы покупателей</div>
+            <div className="container pt-20 mx-auto flex justify-center items-center flex-col max-md:p-4">
+              <div className="bg-gradient-to-r from-[#F5F5F5] to-[#989898] text-transparent bg-clip-text md:text-6xl text-4xl font-bold uppercase w-fit text-center">Отзывы покупателей</div>
               <div className="bg-gradient-to-r from-[#5652523B] to-[#BCB4B43B] lg:h-[470px] w-full flex relative text-white font-thin lg:flex-row flex-col lg:p-0 p-10">
                 <Corners />
                 <div className="w-full flex flex-col justify-center items-center gap-1">
