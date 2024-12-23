@@ -7,10 +7,6 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      "tablet": "1050px",
-      "pad": "800px",
-    },
     extend: {
       animation: {
         extending: "extending 1s",

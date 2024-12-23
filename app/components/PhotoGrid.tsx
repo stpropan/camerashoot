@@ -4,7 +4,7 @@ export default function PhotoGrid(
     { photos, className="" }: { photos: Photo[], className?: string }
 ) {
     return (
-        <div className={"grid grid-cols-2 gap-2 " + className}>
+        <div className={"grid grid-cols-2 gap-2 w-fit " + className}>
             {
                 photos.map((photo, index) => {
                     return (<Image
