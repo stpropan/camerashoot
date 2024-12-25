@@ -62,3 +62,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.slick-slider {
+  height: 100%;
+}

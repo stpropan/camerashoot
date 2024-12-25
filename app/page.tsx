@@ -3,7 +3,7 @@ import BorderBorttomLink from "./components/BorderBorttomLink";
 import PrefItem from "./components/PrefItem";
 import Button from "./components/Button";
 import PhotoGrid from "./components/PhotoGrid";
-import Corners from "./components/Corners";
+import Carousel from "./components/Carousel";
 
 const links = [
   {
@@ -245,72 +245,9 @@ export default function Home() {
         </div>
         <div id="section-5">
           <div className="bg-black">
-            <div className="container pt-20 mx-auto flex justify-center items-center flex-col max-md:p-4">
+            <div className="container py-20 mx-auto flex justify-center items-center flex-col max-md:p-4">
               <div className="bg-gradient-to-r from-[#F5F5F5] to-[#989898] text-transparent bg-clip-text md:text-6xl text-4xl font-bold uppercase w-fit text-center">Отзывы покупателей</div>
-              <div className="bg-gradient-to-r from-[#5652523B] to-[#BCB4B43B] lg:h-[470px] w-full flex relative text-white font-thin lg:flex-row flex-col lg:p-0 p-10">
-                <Corners />
-                <div className="w-full flex flex-col justify-center items-center gap-1">
-                  <Image
-                    src="/images/photos/girl-1.jpg"
-                    alt="author"
-                    width={100}
-                    height={100}
-                    className="w-[150px] h-[150px] rounded-full lg:mb-20 mb-4"
-                  />
-                  <div className="font-bold text-2xl">Иванова Инна</div>
-                  <div className="text-xl">Фотограф</div>
-                </div>
-                <div className="flex flex-col w-full pt-10 pr-20">
-                  <div>
-                    Купила Canon EOS 90 и впечатлён качеством снимков. Особенно радует:
-                  </div>
-
-                  <div className="font-bold my-4">
-                    Плюсы:
-                  </div>
-
-                  <div className="flash">
-                    Превосходное качество изображения
-                  </div>
-                  <div className="flash">
-                    Удобное управление
-                  </div>
-                  <div className="flash">
-                    Быстрая автофокусировка
-                  </div>
-
-                  <div className="font-bold my-4">
-                    Минусы:
-                  </div>
-                  <div className="flash">
-                    Немного тяжёлая
-                  </div>
-                  <div className="flash">
-                    Дорогие объективы
-                  </div>
-                  <div className="mt-4">
-                    В общем, отличная камера
-                    для фотографов любого уровня! Рекомендую!
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-center items-center gap-10 my-8">
-                <Image
-                  src="/images/arrow-left.svg"
-                  alt="left arrow"
-                  width={75}
-                  height={75}
-                />
-                <div className="border border-white width w-[50px] h-[4px]"></div>
-                <div className="border border-white width w-[50px] h-[4px] bg-white"></div>
-                <div className="border border-white width w-[50px] h-[4px] bg-white"></div>
-                <Image
-                  src="/images/arrow-right.svg"
-                  alt="right arrow"
-                  width={75}
-                  height={75}
-                />
-              </div>
+              <Carousel />
             </div>
           </div>
         </div>
